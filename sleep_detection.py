@@ -62,15 +62,16 @@ for k, d in enumerate(dets):
          vec[b][0] = shape.part(b).x
          vec[b][1] = shape.part(b).y
 
-	right_ear=compute_EAR(vec[42:48])#compute eye aspect ratio for right eye
-	left_ear=compute_EAR(vec[36:42])#compute eye aspect ratio for left eye
+        right_ear=compute_EAR(vec[42:48])#compute eye aspect ratio for right eye
+        left_ear=compute_EAR(vec[36:42])#compute eye aspect ratio for left eye
 
-        if (right_ear+left_ear)/2 <.3: #if the avarage eye aspect ration of lef and right eye less than 0.3, the status is sleeping.
+        if (right_ear+left_ear)/2 <0.2: #if the avarage eye aspect ratio of lef and right eye less than 0.2, the status is sleeping.
               status="sleeping"
-	
-	print(status)
+
+        print(status)
+        
         win.add_overlay(shape)
-	
+
 win.add_overlay(dets)
 win.set_title(status)
 dlib.hit_enter_to_continue()
