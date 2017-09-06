@@ -67,11 +67,10 @@ for k, d in enumerate(dets):
 
         if (right_ear+left_ear)/2 <.3: #if the avarage eye aspect ration of lef and right eye less than 0.3, the status is sleeping.
               status="sleeping"
-
+	
 	print(status)
-
         win.add_overlay(shape)
-
+	
 win.add_overlay(dets)
 win.set_title(status)
 dlib.hit_enter_to_continue()
