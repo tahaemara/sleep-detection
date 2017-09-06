@@ -1,9 +1,27 @@
 import sys
-import os
 import dlib
-import glob
 from skimage import io
 import numpy as np
+from scipy.spatial import distance 
+
+# Developed by: Taha Emara
+# Website     : http://www.emaraic.com
+# Email       : taha@emaraic.com
+
+# This code is built on Eye Aspect Ratio formula by Tereza Soukupova and Jan Cech
+#  https://vision.fe.uni-lj.si/cvww2016/proceedings/papers/05.pdf  
+
+def compute_EAR(vec):
+
+	a = distance.euclidean(vec[1], vec[5])
+	b = distance.euclidean(vec[2], vec[4])
+	c = distance.euclidean(vec[0], vec[3])
+	# compute EAR
+	ear = (a + b) / (2.0 * c)
+
+	return ear
+
+
 
 if len(sys.argv) != 3:
     print(
@@ -43,9 +61,13 @@ for k, d in enumerate(dets):
         for b in range(68):
          vec[b][0] = shape.part(b).x
          vec[b][1] = shape.part(b).y
-            
-        if (vec[46][1]-vec[44][1]<=5 and vec[47][1]-vec[43][1]<=5 and vec[40][1]-vec[38][1]<=5 and vec[41][1]-vec[37][1]<=5):
+
+	right_ear=compute_EAR(vec[42:48])#compute eye aspect ratio for right eye
+	left_ear=compute_EAR(vec[36:42])#compute eye aspect ratio for left eye
+
+        if (right_ear+left_ear)/2 <.3: #if the avarage eye aspect ration of lef and right eye less than 0.3, the status is sleeping.
               status="sleeping"
+
 	print(status)
 
         win.add_overlay(shape)
@@ -53,4 +75,6 @@ for k, d in enumerate(dets):
 win.add_overlay(dets)
 win.set_title(status)
 dlib.hit_enter_to_continue()
+
+
 
