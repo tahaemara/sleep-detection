@@ -25,7 +25,6 @@ def compute_EAR(vec):
 
 if len(sys.argv) != 3:
     print(
-
         "execute this program by running: \n"
         "python sleep_detection.py  ./face_landmark_detection.py shape_predictor_68_face_landmarks.dat /path/to/image.jpg"
         "You can download a trained facial shape predictor from:\n "
@@ -38,7 +37,6 @@ detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(predictor_path)
 
 win = dlib.image_window()
-np.set_printoptions(threshold=sys.maxsize)
 img = io.imread(image_path)
 win.clear_overlay()
 win.set_image(img)
