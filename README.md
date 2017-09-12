@@ -10,8 +10,11 @@ This repository contains two app for driver drowsiness detection via eye monitor
 2. Install Python. 
 3. Install Dlib and its dependencies https://github.com/davisking/dlib . 
 
+For more info : [http://emaraic.com/blog/realtime-sleep-detection](http://emaraic.com/blog/realtime-sleep-detection)
 
-### Realtime sleep detection
+
+
+### Realtime Driver Drowsiness Detection (Sleep Detection)
 https://www.youtube.com/watch?v=DxHW8f6ryHQ
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/DxHW8f6ryHQ/3.jpg)](https://www.youtube.com/watch?v=DxHW8f6ryHQ)
