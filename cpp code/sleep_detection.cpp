@@ -52,7 +52,7 @@ int main()
         // Load face detection and deserialize  face landmarks model.
         frontal_face_detector detector = get_frontal_face_detector();
 
-        deserialize("/Users/Emaraic/anaconda/lib/python3.6/site-packages/face_recognition_models/models/shape_predictor_68_face_landmarks.dat") >> sp;
+        deserialize("/path/to/model/shape_predictor_68_face_landmarks.dat") >> sp;
 
         // Grab and process frames until the main window is closed by the user.
         while (!win.is_closed()) {
