@@ -23,6 +23,11 @@ https://www.youtube.com/watch?v=DxHW8f6ryHQ
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/DxHW8f6ryHQ/3.jpg)](https://www.youtube.com/watch?v=DxHW8f6ryHQ)
 
+### References 
+
+Real-Time Eye Blink Detection using Facial Landmarks by Tereza Soukupova and Jan Cech
+
+https://vision.fe.uni-lj.si/cvw.../proceedings/papers/05.pdf
 
 
 
