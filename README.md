@@ -4,7 +4,6 @@ This repository contains two app for driver drowsiness detection via eye monitor
 
 1. Python code: Simple app to detect the status of eye being it closed or opened (sleep_detection.py (test1.jpg and test2.jpg are for testing))
 
-![](http://emaraic.com/assets/img/posts/machine-learning/sleep-detection/sleep-detection-python.png)
 
 2. C++ code: Realtime sleep detection (cpp code/sleep_detection.cpp)
 <img src="http://emaraic.com/assets/img/posts/machine-learning/sleep-detection/sleep-detection-cpp1.png" alt="" data-canonical-src="http://emaraic.com/assets/img/posts/machine-learning/sleep-detection/sleep-detection-cpp1.png" width="400" height="400" />           <img src="http://emaraic.com/assets/img/posts/machine-learning/sleep-detection/sleep-detection-cpp2.png" alt="" data-canonical-src="http://emaraic.com/assets/img/posts/machine-learning/sleep-detection/sleep-detection-cpp2.png" width="400" height="400" />
