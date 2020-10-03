@@ -6,7 +6,7 @@ This repository contains two app for driver drowsiness detection via eye monitor
 
 
 2. C++ code: Realtime sleep detection (cpp code/sleep_detection.cpp)
-<img src="http://emaraic.com/assets/img/posts/machine-learning/sleep-detection/sleep-detection-cpp1.png" alt="" data-canonical-src="http://emaraic.com/assets/img/posts/machine-learning/sleep-detection/sleep-detection-cpp1.png" width="400" height="400" />           <img src="http://emaraic.com/assets/img/posts/machine-learning/sleep-detection/sleep-detection-cpp2.png" alt="" data-canonical-src="http://emaraic.com/assets/img/posts/machine-learning/sleep-detection/sleep-detection-cpp2.png" width="400" height="400" />
+
 
 ### Prerequisites
 1. Install Opencv3 for realtime sleep detection (C++ code).
